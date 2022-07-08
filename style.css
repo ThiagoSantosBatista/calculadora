@@ -1,108 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-html{
-    font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#051355, #1431af);
+html {
+  font-size: 62.5%;
 }
 
-.container{
-    display: flex;
-    justify-content: end;
-    max-width: 40rem;
-    width: 100%;
-    height: 55rem;
-    padding: 3rem;
-    background: rgb(59, 58, 58);
-    border-radius: 5rem;
-    border: 0.1rem solid black;
-    box-shadow: -3.5rem 0 0 rgb(37, 35, 35);
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #03233d, #097e78);
 }
-.main--container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    width:100%;
-    height: 100%;
+
+.container {
+  display: flex;
+  justify-content: end;
+  max-width: 35rem;
+  width: 100%;
+  padding: 3rem;
+  background: rgb(59, 58, 58);
+  border-radius: 5rem;
+  box-shadow: -2rem 0 0 rgb(37, 35, 35);
 }
-.main--tela{
-    max-width: 32rem;
-    width: 100%;
-    max-height: 15rem;
-    height: 100%;
-    border-radius: 2.5rem;
-    background: gray;
-    box-shadow: 2rem 0 0 rgb(87, 83, 83);
+.main--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
 }
-.input--area{
-    width: 50%;
-    padding: 3rem;
-    height: 100%;
-    border-radius: 3rem;
-    border: none;
-    background-color: gray;
+.main--topo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: rgb(223, 211, 211);
+  padding: 0 1rem;
 }
-.main--buttons{
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    gap: 1.5rem;
+.main--on-off {
+  height: 1.5rem;
+  width: 1.5rem;
+  outline: 0.1rem solid rgb(204, 191, 191);
+  background-color: black;
+  border-radius: 50%;
 }
-.buttons--wrapper{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-around;
+.ligado {
+  background-color: green;
 }
-.buttons--wrapperFinal{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-around;
+.main--tela {
+  max-width: 27rem;
+  width: 100%;
+  height: 10rem;
+  border-radius: 2.5rem;
+  background: gray;
+  box-shadow: 2rem 0 0 rgb(87, 83, 83);
 }
-.button{
-    font-size: 1.6rem;
-    font-weight: 700;
-    height: 6rem;
-    width: 6rem;
-    border-bottom: 1rem solid rgb(87, 83, 83);
-    border-left: 1rem solid gray;
-    cursor: pointer;
+.main--buttons {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5rem;
 }
-.button:hover{
-    background-color: rgb(161, 154, 154);
+.tela {
+  display: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  max-width: 32ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 10rem;
+  padding: 3.5rem 2rem;
+  text-align: end;
+  border-radius: 2.5rem;
+  color: white;
 }
-.color{
-    background: rgb(7, 163, 7);
+.button {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 5.5rem;
+  width: 5.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: white;
+  background: rgb(37, 36, 36);
+  border-bottom: 1rem solid rgb(87, 83, 83);
+  border-left: 1rem solid gray;
 }
-.color:hover{
-    background-color: rgb(11, 109, 11);
+.button:hover {
+  background-color: rgb(161, 154, 154);
 }
-.underline{
-    display: block;
-    position: relative;
+.num {
+  background: white;
+  color: black;
 }
-.underline::after{
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    bottom: 0;
-    width: 80%;
-    height: 0.1rem;
-    background: black;
+.color {
+  background: rgb(10, 124, 10);
 }
-.igual{
-    width: 14.5rem;
-    grid-column: 3/4;
+.color:hover {
+  background-color: rgb(13, 177, 13);
+}
+.underline {
+  display: block;
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0;
+  width: 80%;
+  height: 0.1rem;
+  background: white;
+}
+.espaco {
+  height: 13.5rem;
+  grid-row: 4/6;
+  grid-column: 4;
+}
+.on {
+  display: block;
 }

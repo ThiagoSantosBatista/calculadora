@@ -12,39 +12,33 @@
 <body>
     <main class="container">
         <div class="main--container">
+            <div class="main--topo">
+                <span class="main--on-off"></span>
+                <p>&ltTSB&gt</p>
+            </div>
             <div class="main--tela">
-                <input id="calculo" class="input--area" type="text">
+                <p class="tela"></p>
             </div>
             <div class="main--buttons">
-                <div class="buttons--wrapper">
-                    <button class="button color"><span class="underline">ON</span>CE</button>
-                    <button class="button">OFF</button>
-                    <button class="button">%</button>
-                    <button class="button">/</button>
-                </div>
-                <div class="buttons--wrapper">
-                    <button class="button">7</button>
-                    <button class="button">8</button>
-                    <button class="button">9</button>
-                    <button class="button">X</button>
-                </div>
-                <div class="buttons--wrapper">
-                    <button class="button">4</button>
-                    <button class="button">5</button>
-                    <button class="button">6</button>
-                    <button class="button">-</button>
-                </div>
-                <div class="buttons--wrapper">
-                    <button class="button">1</button>
-                    <button class="button">2</button>
-                    <button class="button">3</button>
-                    <button class="button">+</button>
-                </div>
-                <div class="buttons--wrapperFinal">
-                    <button class="button">0</button>
-                    <button class="button">.</button>
-                    <button class="button color igual">=</button>
-                </div>
+                <button id="on-ce" class="button color"><span class="underline">on</span>c</button>
+                <button id="desligar" class="button">off</button>
+                <button id="apagar" class="button">&lt</button>
+                <button class="button" onclick="imprimir(this.value)" value="/">/</button>
+                <button class="button num" onclick="imprimir(this.value)" value="7">7</button>
+                <button class="button num" onclick="imprimir(this.value)" value="8">8</button>
+                <button class="button num" onclick="imprimir(this.value)" value="9">9</button>
+                <button class="button" onclick="imprimir(this.value)" value="*">x</button>
+                <button class="button num" onclick="imprimir(this.value)" value="4">4</button>
+                <button class="button num" onclick="imprimir(this.value)" value="5">5</button>
+                <button class="button num" onclick="imprimir(this.value)" value="6">6</button>
+                <button class="button" onclick="imprimir(this.value)" value="-">-</button>
+                <button class="button num" onclick="imprimir(this.value)" value="1">1</button>
+                <button class="button num" onclick="imprimir(this.value)" value="2">2</button>
+                <button class="button num" onclick="imprimir(this.value)" value="3">3</button>
+                <button class="button espaco" onclick="imprimir(this.value)" value="+">+</button>
+                <button class="button num" onclick="imprimir(this.value)" value="0">0</button>
+                <button class="button num" onclick="imprimir(this.value)" value=".">.</button>
+                <button id="calcular" class="button num color" onclick="calcular()">=</button>
             </div>
         </div>
     </main>

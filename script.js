@@ -35,9 +35,11 @@ function back() {
 }
 
 function calcular() {
-  const resultado = document.querySelector(".tela").innerHTML;
-  if (tela) {
-    tela.innerHTML = eval(resultado);
+  if (tela.classList.contains("on")) {
+    const resultado = document.querySelector(".tela").innerHTML;
+    if (tela) {
+      tela.innerHTML = eval(resultado);
+    }
   }
 }
 

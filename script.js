@@ -5,6 +5,8 @@ const tela = document.querySelector(".tela");
 const conteudo = document.querySelectorAll(".num");
 const onOff = document.querySelector(".main--on-off");
 const menu = document.querySelector("#menu");
+const aberto = document.querySelector("#aberto");
+const fechado = document.querySelector("#fechado");
 
 function ligarLimpar() {
   if (tela.classList.contains("on")) {
@@ -24,7 +26,10 @@ function desligar() {
 }
 
 function imprimir(num) {
-  if (tela.classList.contains("on")) {
+  if (
+    tela.classList.contains("on") &&
+    fechado.classList.contains("active-menu")
+  ) {
     const numero = tela.innerHTML;
     tela.innerHTML = numero + num;
   }
@@ -36,7 +41,10 @@ function back() {
 }
 
 function calcular() {
-  if (tela.classList.contains("on")) {
+  if (
+    tela.classList.contains("on") &&
+    fechado.classList.contains("active-menu")
+  ) {
     const resultado = document.querySelector(".tela").innerHTML;
     if (tela) {
       tela.innerHTML = eval(resultado);
@@ -53,18 +61,18 @@ function toggleMenu(event) {
   const active = body.classList.contains("active");
   event.currentTarget.setAttribute("aria-expanded", active);
   if (active) {
-    document.querySelector('#aberto').classList.add('active-menu')
-    document.querySelector('#fechado').classList.remove('active-menu')
+    aberto.classList.add("active-menu");
+    fechado.classList.remove("active-menu");
     event.currentTarget.setAttribute("aria-label", "Fechar menu");
   } else {
-    document.querySelector('#aberto').classList.remove('active-menu')
-    document.querySelector('#fechado').classList.add('active-menu')
+    aberto.classList.remove("active-menu");
+    fechado.classList.add("active-menu");
     event.currentTarget.setAttribute("aria-label", "Abrir menu");
   }
 }
 
-menu.addEventListener('click', toggleMenu);
-menu.addEventListener('touchstart', toggleMenu);
+menu.addEventListener("click", toggleMenu);
+menu.addEventListener("touchstart", toggleMenu);
 apagar.addEventListener("click", back);
 on.addEventListener("click", ligarLimpar);
 off.addEventListener("click", desligar);

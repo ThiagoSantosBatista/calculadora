@@ -4,6 +4,7 @@ const apagar = document.querySelector("#apagar");
 const tela = document.querySelector(".tela");
 const conteudo = document.querySelectorAll(".num");
 const onOff = document.querySelector(".main--on-off");
+const menu = document.querySelector("#menu");
 
 function ligarLimpar() {
   if (tela.classList.contains("on")) {
@@ -43,6 +44,27 @@ function calcular() {
   }
 }
 
+function toggleMenu(event) {
+  if (event.type === "touchstart") {
+    event.preventDefault();
+  }
+  const body = document.querySelector("body");
+  body.classList.toggle("active");
+  const active = body.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active);
+  if (active) {
+    document.querySelector('#aberto').classList.add('active-menu')
+    document.querySelector('#fechado').classList.remove('active-menu')
+    event.currentTarget.setAttribute("aria-label", "Fechar menu");
+  } else {
+    document.querySelector('#aberto').classList.remove('active-menu')
+    document.querySelector('#fechado').classList.add('active-menu')
+    event.currentTarget.setAttribute("aria-label", "Abrir menu");
+  }
+}
+
+menu.addEventListener('click', toggleMenu);
+menu.addEventListener('touchstart', toggleMenu);
 apagar.addEventListener("click", back);
 on.addEventListener("click", ligarLimpar);
 off.addEventListener("click", desligar);

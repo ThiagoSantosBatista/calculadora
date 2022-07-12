@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5&logoColor=red) ![](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript&logoColor=yellow) ![](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=css3&logoColor=blue) ![](https://img.shields.io/badge/Visual_Studio_Code-black?style=for-the-badge&logo=visual%20studio%20code&logoColor=blue) ![](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-# PROJETO - CALCULADORA 🖩
+# PROJETO - CALCULADORA 
 Com os estudos de JavaScript resolvi criar essa calculadora para colocar em prática o conhecimento obtido, para a realização desse projeto foi utilizado: JavaScript, HTML e CSS. A calculadora tem como funcionalidade realizar operações matemáticas básicas: adição, subtração, multiplicação e divisão, além disso, possui outras funções como: ligar/desligar, backspace e limpar toda a operação. 
+
+## 🖥️ Demonstração
 ![](/resultado/Calculadora.png)
 
 ## ❓ Como Utilizar

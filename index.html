@@ -2,78 +2,78 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculadora com operações básicas.">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora com operações básicas.">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container">
-        <main class="main">
-            <div class="main--container">
-                <div class="main--topo">
-                    <span class="main--on-off"></span>
-                    <p>&lt;TSB&gt;</p>
-                </div>
-                <div class="main--tela">
-                    <p class="tela"></p>
-                </div>
-                <div class="main--buttons">
-                    <button id="on-ce" class="button color"><span class="underline">on</span>c</button>
-                    <button id="desligar" class="button">off</button>
-                    <button id="apagar" class="button">&lt;</button>
-                    <button class="button" onclick="imprimir(this.value)" value="/">/</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="7">7</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="8">8</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="9">9</button>
-                    <button class="button" onclick="imprimir(this.value)" value="*">x</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="4">4</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="5">5</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="6">6</button>
-                    <button class="button" onclick="imprimir(this.value)" value="-">-</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="1">1</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="2">2</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="3">3</button>
-                    <button class="button espaco" onclick="imprimir(this.value)" value="+">+</button>
-                    <button class="button num" onclick="imprimir(this.value)" value="0">0</button>
-                    <button class="button num" onclick="imprimir(this.value)" value=".">.</button>
-                    <button id="calcular" class="button num color" onclick="calcular()">=</button>
-                </div>
-            </div>
-        </main>
-        <aside class="sidebar">
-            <div class="sidebar--container">
-                <div class="sidebar--texto">
-                    <h1 class="sidebar--titulo">Thiago Batista</h1>
-                    <h2 class="sidebar--subtitulo">Front-End Developer</h2>
-                </div>
-                <nav class="sidebar--nav">
-                    <ul>
-                        <li class="nav--item"><a class="selecionado" href="#"><i class="fas fa-house"></i>
-                                Calculadora</a></li>
-                        <li class="nav--item"><a class="opcao" href="https://github.com/ThiagoSantosBatista/calculadora"
-                                target="_blank"><i class="fab fa-github"></i> Repositório</a></li>
-                        <li class="nav--item"><a class="opcao" href="https://www.linkedin.com/in/thiago-santos-batista/"
-                                target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="menu">
-                <button id="menu" aria-label="Abrir-menu" aria-expanded="false" class="menu--hamburguer">
-                    <span id="fechado" class="active-menu"><i class="fas fa-bars"></i></span>
-                    <span id="aberto"><i class="fa-solid fa-x"></i></span>
-                </button>
-            </div>
-        </aside>
-    </div>
-    <script src="/script.js"></script>
+  <div class="container">
+    <main class="main">
+      <div class="main--container">
+        <div class="main--topo">
+          <span class="main--on-off"></span>
+          <p>&lt;TSB/&gt;</p>
+        </div>
+        <div class="main--tela">
+          <p class="tela"></p>
+        </div>
+        <div class="main--buttons">
+          <button id="on-ce" class="button color"><span class="underline">on</span>c</button>
+          <button id="desligar" class="button">off</button>
+          <button id="apagar" class="button">&lt;</button>
+          <button class="button" onclick="imprimir(this.value)" value="/">/</button>
+          <button class="button num" onclick="imprimir(this.value)" value="7">7</button>
+          <button class="button num" onclick="imprimir(this.value)" value="8">8</button>
+          <button class="button num" onclick="imprimir(this.value)" value="9">9</button>
+          <button class="button" onclick="imprimir(this.value)" value="*">x</button>
+          <button class="button num" onclick="imprimir(this.value)" value="4">4</button>
+          <button class="button num" onclick="imprimir(this.value)" value="5">5</button>
+          <button class="button num" onclick="imprimir(this.value)" value="6">6</button>
+          <button class="button" onclick="imprimir(this.value)" value="-">-</button>
+          <button class="button num" onclick="imprimir(this.value)" value="1">1</button>
+          <button class="button num" onclick="imprimir(this.value)" value="2">2</button>
+          <button class="button num" onclick="imprimir(this.value)" value="3">3</button>
+          <button class="button espaco" onclick="imprimir(this.value)" value="+">+</button>
+          <button class="button num" onclick="imprimir(this.value)" value="0">0</button>
+          <button class="button num" onclick="imprimir(this.value)" value=".">.</button>
+          <button id="calcular" class="button num color" onclick="calcular()">=</button>
+        </div>
+      </div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar--container">
+        <div class="sidebar--texto">
+          <h1 class="sidebar--titulo">Thiago Batista</h1>
+          <h2 class="sidebar--subtitulo">Front-End Developer</h2>
+        </div>
+        <nav class="sidebar--nav">
+          <ul>
+            <li class="nav--item"><a class="selecionado" href="#"><i class="fas fa-house"></i>
+                Calculadora</a></li>
+            <li class="nav--item"><a class="opcao" href="https://github.com/ThiagoSantosBatista/calculadora"
+                target="_blank"><i class="fab fa-github"></i> Repositório</a></li>
+            <li class="nav--item"><a class="opcao" href="https://www.linkedin.com/in/thiago-santos-batista/"
+                target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu">
+        <button id="menu" aria-label="Abrir-menu" aria-expanded="false" class="menu--hamburguer">
+          <span id="fechado" class="active-menu"><i class="fas fa-bars"></i></span>
+          <span id="aberto"><i class="fa-solid fa-x"></i></span>
+        </button>
+      </div>
+    </aside>
+  </div>
+  <script src="/script.js"></script>
 </body>
 
 </html>

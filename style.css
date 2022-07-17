@@ -61,6 +61,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0 1rem;
+  cursor: default;
   color: var(--cinzaClaro);
 }
 .main--on-off {
@@ -167,6 +168,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 3rem 0;
+  cursor: default;
   background: var(--azulEscuroUm);
 }
 .sidebar--titulo {
@@ -199,6 +201,7 @@ body {
 }
 .nav--item .selecionado {
   background-color: white;
+  cursor: default;
   color: var(--cianoHover);
 }
 .menu {

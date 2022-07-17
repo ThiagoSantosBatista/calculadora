@@ -3,7 +3,7 @@
 Com os estudos de JavaScript resolvi criar essa calculadora para colocar em prática o conhecimento obtido, para a realização desse projeto foi utilizado: JavaScript, HTML e CSS. A calculadora tem como funcionalidade realizar operações matemáticas básicas: adição, subtração, multiplicação e divisão, além disso, possui outras funções como: ligar/desligar, backspace e limpar toda a operação. 
 
 ## 🖥️ Demonstração
-![](/resultado/Calculadora.png)
+![](/resultado/calculadora-tsb.png)
 
 ## ❓ Como Utilizar
 - Com o propósito de ligar e começar a utilizar a calculadora basta pressionar o botão "ON/C" e realizar as operações, com a calculadora ligada o mesmo botão irá servir para limpar toda a operação.
